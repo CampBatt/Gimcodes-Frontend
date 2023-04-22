@@ -41,7 +41,7 @@ function change_prio(){
 
 
 
-    fetch("https://gimcodes-4ccolru8x-campbatt.vercel.app/prio_code", {
+    fetch("https://gimcodes-campbatt.vercel.app/prio_code", {
     method: 'POST',
     headers:{
         'Content-Type': 'application/json'
