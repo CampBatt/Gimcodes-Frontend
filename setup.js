@@ -6,7 +6,7 @@ var code_desc = document.getElementById("code_desc");
 
 
 function start(){
-fetch("https://gimcodes-campbatt.vercel.app/setup")
+fetch("https://gimcodes-4ccolru8x-campbatt.vercel.app/setup")
 .then (res => {
     return res.json()
 })
@@ -14,7 +14,7 @@ fetch("https://gimcodes-campbatt.vercel.app/setup")
     latest.innerHTML = data["code"]
     code_desc.innerHTML = "This code was found " + data["time"] + " " + data["time_unit"] + " ago"
     prio.innerHTML = data["prio_code"]
-    if (data["not_looking"]){
+    if (! data["vis_looking"]){
         statuss.innerHTML = "Start Finding a Code"
         load.className = "hidden"
     }else{
