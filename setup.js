@@ -6,7 +6,7 @@ var code_desc = document.getElementById("code_desc");
 
 
 function start(){
-fetch("https://gimcodes-4ccolru8x-campbatt.vercel.app/setup")
+fetch("https://gimcodes-campbatt.vercel.app/setup")
 .then (res => {
     return res.json()
 })
