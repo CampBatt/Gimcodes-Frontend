@@ -13,7 +13,7 @@ function copy_to_clip(){
 
 function find_code(){
 statuss.innerHTML = "Cheking if server is already finding a code, could take about 30 secconds."
-fetch("https://gimcodes-4ccolru8x-campbatt.vercel.app/test")
+fetch("https://gimcodes-campbatt.vercel.app/test")
 .then(res => {
     return res.json()
 })
@@ -34,7 +34,7 @@ fetch("https://gimcodes-4ccolru8x-campbatt.vercel.app/test")
         keep_looking = true
         while (keep_looking){
             console.log('started')
-       let response = await fetch("https://gimcodes-4ccolru8x-campbatt.vercel.app/");
+       let response = await fetch("https://gimcodes-campbatt.vercel.app");
        console.log(response);
        let APIresponse = response.json();
        APIresponse.then(res => {
