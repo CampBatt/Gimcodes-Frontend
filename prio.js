@@ -38,7 +38,7 @@ function change_prio(){
     if (passcode == 'HackerMan' || passcode == 'hackerman'){
         alert('Your smart using the HTML but thats not actually the password');
     };
-
+// No, I don't have any hidden easter egg passwords in the Java script, I will tell you the password is the same as my lunch number
 
 
     fetch("https://gimcodes-campbatt.vercel.app/prio_code", {
