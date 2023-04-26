@@ -16,7 +16,7 @@ function copy_to_clip(){
 
 function find_code(){
 statuss.innerHTML = "Cheking if server is already finding a code, could take about 30 secconds."
-fetch("https://gimcodes-campbatt.vercel.app/test")
+fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/test")
 .then(res => {
     return res.json()
 })
