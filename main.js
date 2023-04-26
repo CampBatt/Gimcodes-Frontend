@@ -7,8 +7,10 @@ var code_desc = document.getElementById("code_desc");
 
 
 function copy_to_clip(){
-    navigator.clipboard.writeText(this.innerHTML);
-    alert("Code Copied To Clipboard")
+    navigator.clipboard.writeText(this.innerHTML)
+    .then(()=>{
+        alert("Code Copied To Clipboard")
+    })
 };
 
 function find_code(){
@@ -56,4 +58,3 @@ console.log(find);
 prio.addEventListener("click", copy_to_clip);
 latest.addEventListener("click", copy_to_clip);
 find.addEventListener("click", find_code);
-
