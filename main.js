@@ -4,7 +4,7 @@ var find = document.getElementById("find");
 var statuss = document.getElementById("status");
 var load = document.getElementById("load");
 var code_desc = document.getElementById("code_desc");
-var the_one_looking = false
+//var the_one_looking = false
 
 
 function copy_to_clip(){
@@ -21,7 +21,7 @@ fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/test")
     return res.json()
 })
 .then (data => {if (data['can_continue']){
-    the_one_looking = true
+    //the_one_looking = true
     statuss.innerHTML = "Currently Finding Code"
     load.className = ""
     send_untill_find();
@@ -38,7 +38,7 @@ fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/test")
         keep_looking = true
         while (keep_looking){
             //console.log('started')
-       let response = await fetch("https://gimcodes-campbatt.vercel.app/");
+       let response = await fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/");
        console.log(response);
        let APIresponse = response.json();
        APIresponse.then(res => {
