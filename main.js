@@ -18,7 +18,7 @@ fetch("https://gimcodes-campbatt.vercel.app/test")
     return res.json()
 })
 .then (data => {if (data['can_continue']){
-    statuss.innerHTML = "Finding Code"
+    statuss.innerHTML = "Currently Finding Code"
     load.className = ""
     send_untill_find();
 }else{
@@ -33,8 +33,8 @@ fetch("https://gimcodes-campbatt.vercel.app/test")
     async function send_untill_find(){
         keep_looking = true
         while (keep_looking){
-            console.log('started')
-       let response = await fetch("https://gimcodes-campbatt.vercel.app");
+            //console.log('started')
+       let response = await fetch("https://gimcodes-campbatt.vercel.app/");
        console.log(response);
        let APIresponse = response.json();
        APIresponse.then(res => {
@@ -56,3 +56,4 @@ console.log(find);
 prio.addEventListener("click", copy_to_clip);
 latest.addEventListener("click", copy_to_clip);
 find.addEventListener("click", find_code);
+
