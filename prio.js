@@ -41,7 +41,7 @@ function change_prio(){
 // No, I don't have any hidden easter egg passwords in the Java script, I will tell you the password is the same as my lunch number
 
 
-    fetch("https://gimcodes-campbatt.vercel.app/prio_code", {
+    fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/prio_code", {
     method: 'POST',
     headers:{
         'Content-Type': 'application/json'
