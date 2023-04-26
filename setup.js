@@ -6,7 +6,7 @@ var code_desc = document.getElementById("code_desc");
 var s_sents = 0
 
 function start(){
-fetch("https://gimcodes-campbatt.vercel.app/setup")
+fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/setup")
 .then (res => {
     return res.json()
 })
@@ -24,9 +24,8 @@ fetch("https://gimcodes-campbatt.vercel.app/setup")
     
 
 })
-if (! the_one_looking){
-    s_sents ++
-}
+s_sents ++
+
 
 if (s_sents >= 5){
     alert('Are you still here? Going idle puts strain on the database.');
