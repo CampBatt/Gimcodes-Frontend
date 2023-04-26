@@ -4,6 +4,7 @@ var find = document.getElementById("find");
 var statuss = document.getElementById("status");
 var load = document.getElementById("load");
 var code_desc = document.getElementById("code_desc");
+var the_one_looking = false
 
 
 function copy_to_clip(){
@@ -20,6 +21,7 @@ fetch("https://gimcodes-campbatt.vercel.app/test")
     return res.json()
 })
 .then (data => {if (data['can_continue']){
+    the_one_looking = true
     statuss.innerHTML = "Currently Finding Code"
     load.className = ""
     send_untill_find();
@@ -58,3 +60,4 @@ console.log(find);
 prio.addEventListener("click", copy_to_clip);
 latest.addEventListener("click", copy_to_clip);
 find.addEventListener("click", find_code);
+
