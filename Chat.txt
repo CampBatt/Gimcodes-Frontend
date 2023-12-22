@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <link rel="icon" href="gimkit3.png" type="image/x-icon">
+        <link rel = "stylesheet", href="main.css"/>
+        <title>Gimcodes</title>
+    </head>
+
+
+    <body>
+        <header>
+            <ul class="header">
+                <li><h1>Gimcodes</h1></li>
+                <li>
+                    <nav>
+                        <ul>
+                            <li class="nav"><a href="index.html"><strong>Home</strong></a></li>
+                            <li class="nav"><a href="PriorityCodes.html"><strong>Priority Codes</strong></a></li>
+                            <li class="nav"><a href="#"><strong>Chat</strong></a></li>
+                            <li class="nav"><a href="About.html"><strong>Changelog</strong></a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+        </header>
+
+
+
+
+
+
+        <ul id="content">
+            <li class="loginstuff">
+                <div>
+                    <ul>
+                        <li class="morestuff">
+                            <ul>
+                                <li id="login"><strong>Login</strong></li>
+                                <li id="sign"><strong>Sign Up</strong></li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_alex" id="input_user"><input value="" id="user_input"></li>
+                        <li id="Username"><strong>Username</strong></li>
+                        <li class="el_padre_de_alex" id="input_pass"><input value="" id="pass_input"></li>
+                        <li id="Password"><strong>Password</strong></li>
+                        <li id="ehnter"><strong>Enter</strong></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="chatstuff">
+                <div>
+                    <ul id="ScrollChat">
+                        <br>
+                        <li id="first_message" class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Alex</strong></li><li class="time">5 minutes ago</li></ul></li>
+                                <li class="messagething">Guys, im so cool</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Mr.Pap</strong></li><li class="time">10 days ago</li></ul></li>
+                                <li class="messagething">NO, only tractors are cool</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">real</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Mr.Pap</strong></li><li class="time">10 days ago</li></ul></li>
+                                <li class="messagething">NO, only tractors are cool</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">real</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Mr.Pap</strong></li><li class="time">10 days ago</li></ul></li>
+                                <li class="messagething">NO, only tractors are cool</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">real</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Mr.Pap</strong></li><li class="time">10 days ago</li></ul></li>
+                                <li class="messagething">NO, only tractors are cool</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">real</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Mr.Pap</strong></li><li class="time">10 days ago</li></ul></li>
+                                <li class="messagething">NO, only tractors are cool</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">real</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris" id="last_message">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Mr.Pap</strong></li><li class="time">10 days ago</li></ul></li>
+                                <li class="messagething">NO, only tractors are cool</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">real</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris" id="last_message">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Mr.Pap</strong></li><li class="time">10 days ago</li></ul></li>
+                                <li class="messagething">NO, only tractors are cool</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">real</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris" id="last_message">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">3</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">sample message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">example message</li>
+                            </ul>
+                        </li>
+                        <li class="el_padre_de_Chris" id="last_message">
+                            <ul>
+                                <li><ul><li><strong>Aiden</strong></li><li class="time">21 seconds ago</li></ul></li>
+                                <li class="messagething">You know the css gets really annoying after a while</li>
+                            </ul>
+                        </li>
+                        <li id="message_input"><input value="Send Message" id="chat_input"></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        
+        
+        <script src="javatest.js"></script>
+        <script src="nav.js"></script>
+    </body>
+</html>

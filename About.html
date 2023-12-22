@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
 
 <html>
     <head>
-        <link rel = "stylesheet", href='main.css'/>
+        <link rel = "stylesheet", href="main.css"/>
+        <link rel = "icon" href="gimkit3.png" type="image/x-icon"/>
         <title>Gimcodes</title>
     </head>
+
 
     <body>
         <header>
@@ -15,15 +18,56 @@
                         <ul>
                             <li class="nav"><a href="index.html"><strong>Home</strong></a></li>
                             <li class="nav"><a href="PriorityCodes.html"><strong>Priority Codes</strong></a></li>
-                            <li class="nav"><a href="#"><strong>About</strong></a></li>
-                            <li class="nav"><a href="Miscellaneous.html"><strong>Miscellaneous</strong></a></li>
+                            <li class="nav"><a href="Chat.html"><strong>Chat</strong></a></li>
+                            <li class="nav"><a href="#"><strong>Changelog</strong></a></li>
                         </ul>
                     </nav>
                 </li>
             </ul>
         </header>
+        <div id="changelogbg">
+            <br>
+            <h2>Version 0.7</h2>
+            <br>
+
+
+            <ul>
+                <b>Changelog</b>
+                <li>There is now a changelog to replace the "About" section as it wasn't used for anything.</li>
+                <br>
+                <b>Chat Scrolling</b>
+                <li>There is now a chat history, you can scroll up to see previous messages.</li>
+                <li>75 messages are saved compared to 7 that used to be saved before this change.</li>
+                <li>Large messages and images now appear full size, a more formal way of sending images will be added in the future.</li>
+                <br>
+                <b>Command changes</b>
+                <li>Some commands have been changed to account for the new chat scrolling</li>
+                <li>/change command now works differntly. The old syntax was /change:MessageNumber:NewMessage where the message number was the number of the message going from top too bottom, it is now reversed and goes from bottom to top. For example if  you were to change the most recently sent message you would type /change:1:test.</li>
+                <li>/delete command now works differntly. Used to delete the last sent message but now can delete any message using /delete:MessageNumber, works simmarly to /change.</li>
+                <li>/clear command removed, made obselete by the updated /delete command.</li>
+                <li>/fill command removed, was next to useless.</li>
+                <li>'all' can be used with the /ping command. For example, /ping:all.</li>
+                <br>
+                <b>Bugfixes/Miscellaneous</b>
+                <li>Fixed the latest code not automaticly refreshing.</li>
+                <li>Removed the pop-up to check if you are afk as it doesn't do anything in google chrome.</li>
+                <li>Removed the footer that said "Gimcodes website made by Aiden Towne", was useless and just caused issues.</li>
+                <br>
+                <b>Roadmap</b>
+                <li>I came up with a basic roadmap for the Gimcodes.</li>
+                <li>Version 0.8: More fun commands, optimization, bugfixes.</li>
+                <li>Version 0.9: Profles and Gimkit hacks if I can get them to work.</li>
+                <li>Version 1.0: Search engine optimization, possibly Google ads.</li>
+                <br>
+
+
+            </ul>
+            <br>
+
+
+        </div>
+        <br>
         
-        <footer id = "foot">Gimcodes website made by Aiden Towne</footer>
         <script src="nav.js"></script>
     </body>
 </html>

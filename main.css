@@ -1,18 +1,21 @@
-strong{
+﻿strong{
     font-weight: 600;
 }
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #1a241f;
+    background-color: #faf5f5;
 }
+
 
 br{
   padding:0;
   margin:0;
   font-size:0;
 }
+
 
 body.does_not_exist{
     color: #ebb505;
@@ -24,12 +27,14 @@ body.does_not_exist{
     #a2f5a9
     #283d31
 
+
 }
+
 
 h1{
     text-align: center;
     font-size:50px;
-    background-color: #3b7259;
+    background-color: #faf5f5;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 5px;
@@ -41,11 +46,13 @@ h1{
     box-shadow: 0px 0px 10px black;
 }
 
+
 header{
     margin: 0;
     text-align: center;
-    background-color:#375343;
+    background-color:#fc0303;
 }
+
 
 header ul{
     list-style: none;
@@ -55,36 +62,46 @@ header ul{
     box-shadow: 0px 0px 3px black;
 }
 
+
 header ul.header li nav ul{
     display: flex;
     list-style: none;
 }
+
 
 header ul.header li nav ul li{
     margin: auto;
     border-style: solid;
     border-width: 1.5px;
     width: 25%;
-    background-color: #3b7259;
-  	
+    background-color: #faf5f5;
+          
 }
+
 
 header ul.header li nav ul li:hover{
     margin: auto;
     border-style: solid;
     border-width: 1.5px;
     background-color: black;
-  	box-shadow: 0 0 20px #3b7259;
+          box-shadow: 0 0 20px #faf5f5;
     cursor: pointer;
 
-  	
+
+          
 }
+
+
+
 
 
 
 header ul.header li nav ul li:hover a{
- color: #3b7259;
+ color: #faf5f5;
 }
+
+
+
 
 
 
@@ -94,27 +111,31 @@ header ul li nav ul li a{
     font-size: 25px;
 }
 
+
 div.enter_code{
     text-align: center;
 }
+
 
 div.enter_code ul {
     margin: auto;
     list-style:none;
     text-align: center;
-    background-color: #375343;
+    background-color: #fc0303;
     width: 50%;
     padding: 0;
     border-radius: 15px;
     box-shadow: 0px 0px 4px black;
 }
 
+
 div.enter_code ul li{
     margin:auto;
 }
 
+
 div.enter_code ul li.big_title{
-    background-color: #3b7259;
+    background-color: #faf5f5;
     width: 400px;
     margin:auto;
     font-size:50px;
@@ -122,55 +143,62 @@ div.enter_code ul li.big_title{
     box-shadow:0px 0px 4px black;
 }
 
+
 li.fake_in{
-background-color: #3b7259;
+background-color: #faf5f5;
 font-size: 40px;
 width: 50%;
 border-radius: 30px;
 box-shadow:0px 0px 4px black;
 }
 
+
 li.hidden_fake_in{
     display: none;
 }
 
+
 li.fake_in:hover{
 background-color: black;
-color: #3b7259;
-box-shadow: 0px 0px 30px #3b7259;
+color: #faf5f5;
+box-shadow: 0px 0px 30px #faf5f5;
 }
+
 
 li.in input{
     padding: 0;
     text-align: center;
     background-color: black;
-    color: #3b7259;
+    color: #faf5f5;
     border-radius: 30px;
     width: 50%;
     font-size: 40px;
     border: none;
-    box-shadow: 0px 0px 30px #3b7259;
+    box-shadow: 0px 0px 30px #faf5f5;
 }
+
 
 li.in input.hidden{
     display: none;
 }
 
+
 ul.buttons{
     list-style: none;
     display: flex;
-  	padding: 0;
-  	margin: 2% 0 0 0;
+          padding: 0;
+          margin: 2% 0 0 0;
 }
 ul.buttons li{
     text-align: center;
     margin: auto;
-  	padding:0;
+          padding:0;
     list-style: none;
 }
 
+
 ul.buttons li ul{
- background-color:#375343;
+ background-color:#fc0303;
  box-shadow: 0px 0px 4px black;
  border-radius:15px;
  margin:0;
@@ -178,8 +206,9 @@ ul.buttons li ul{
  width:600px
 }
 
+
 .find{
-  background-color:#375343;
+  background-color:#fc0303;
   box-shadow: 0px 0px 4px black;
  border-radius:15px;
  margin:auto;
@@ -188,8 +217,9 @@ ul.buttons li ul{
   
 }
 
+
 .but{
- background-color: #3b7259;
+ background-color: #faf5f5;
  width: 400px;
  margin:auto;
  font-size:50px;
@@ -197,8 +227,9 @@ ul.buttons li ul{
  box-shadow:0px 0px 4px black;
 }
 
+
 .title{
-  background-color: #3b7259;
+  background-color: #faf5f5;
  width: 400px;
  margin:0;
  font-size:50px;
@@ -206,36 +237,418 @@ ul.buttons li ul{
  box-shadow:0px 0px 4px black;
 }
 
+
 .but:hover{
   background-color: black;
-  color:#3b7259;
-  box-shadow: 0 0 4px #3b7259;
+  color:#faf5f5;
+  box-shadow: 0 0 4px #faf5f5;
   cursor:pointer;
 }
 
 
+
+
 .description{
-  background-color:#3b7259;
+  background-color:#faf5f5;
   border-radius:15px;
   box-shadow: 0px 0px 4px black;
 
+
   
 }
+
 
 ul.find{
 list-style: none;
 text-align: center;
 }
 
+
 img.hidden{
     display: none;
 }
+
+
+#changelogbg{
+    background-color: #fc0303;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+
+#changelogbg h2{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    background-color: #faf5f5;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 10px;
+    font-size: 50px;
+    box-shadow: 0px 0px 4px black;
+}
+
+
+#changelogbg ul{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #faf5f5;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+}
+
+
+#changelogbg ul b{
+    font-size: 30px;
+}
+
+
+#changelogbg ul li{
+    font-size: 20px;
+    text-align: left;
+}
+
+
+#content{
+    padding: 0px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    list-style: none;
+
+
+}
+
+
+#content li{
+    display: inline-block;
+    vertical-align:top;
+}
+
+
+#content .loginstuff{
+    background-color: #fc0303;
+    border-radius: 10px;
+}
+
+
+#content .loginstuff div{
+    height: 500px;
+    width: 460px;
+    width: 360px;
+    font-size: xx-large;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    #content .loginstuff div{
+        height: 430px;
+    }
+}
+
+
+#content .loginstuff div ul{
+    padding: 0px;
+    margin: 0px;
+    height: 500px;
+    width: 460px;
+    width: 341px;
+    width: 360px;
+}
+
+
+#content .loginstuff div ul li{
+    font-size: larger;
+    background-color: #faf5f5;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#content .loginstuff div ul #Username{
+    margin-bottom: 10px;
+}
+
+
+#content .loginstuff div ul #ehnter{
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+
+#content .loginstuff div ul li:hover{
+    background-color: black;
+    color:#faf5f5;
+    cursor: pointer;
+}
+
+
+#content .loginstuff div ul .morestuff:hover{
+    background: none;
+    color: black;
+    cursor: default;
+}
+
+
+
+
+#content .loginstuff div ul .el_padre_de_alex{
+    display: none;
+}
+
+
+#content .loginstuff div ul{
+    margin-top: 10px;
+}
+
+
+#content .loginstuff div ul .morestuff{
+    background: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: none;
+    margin-bottom: 70px;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    #content .loginstuff div ul .morestuff{
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+
+
+#content .loginstuff div ul #input_user{
+    background-color: black;
+    color: #faf5f5;
+    margin-bottom: 10px;
+}
+
+
+#content .loginstuff div ul #input_pass{
+    background-color: black;
+    color: #faf5f5;
+}
+
+
+
+
+#content .loginstuff div ul li input{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width: 320px;
+    color: #faf5f5;
+    font-size: xx-large;
+    background:none;
+    outline: none;
+}
+
+
+#content .loginstuff div ul li ul{
+    text-align: center;
+    height: auto;
+}
+
+
+#content .loginstuff div ul li ul li{
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 0px;
+    
+    
+}
+
+
+#content .loginstuff div ul li ul #login{
+    border-radius: 5px;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+
+#content .loginstuff div ul li ul #login:hover{
+    background-color: #faf5f5;
+    color: black;
+    cursor: default;
+}
+
+
+#content .loginstuff div ul li ul #sign{
+    margin-bottom: 90px;
+    border-radius: 15px;
+    font-size: 30px;
+    }
+
+
+#contex .loginstuff div ul li ul #sign:hover{
+    background-color: black;
+    color: #faf5f5;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    #content .loginstuff div ul li ul #sign{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+#content .chatstuff div{
+    background-color:#fc0303;
+    width: 1350px;
+    width: 1110px;
+    height: 510px;
+    margin-left: 5px;
+    border-radius: 10px;
+    position: relative;
+
+
+}
+
+
+@media only screen and (max-width: 1366px) {
+    #content .chatstuff div{
+        width: 945px;
+        height: 440px;
+    }
+}
+
+
+
+
+#content .chatstuff div ul{
+    padding: 0px;
+    margin: 0px;
+    max-height: 451px;
+    overflow-y:auto;
+    scrollbar-width: thin;
+}
+
+
+#content .chatstuff div ul li{
+    display: block;
+    margin-bottom: 20px;
+    background-color: #faf5f5;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px black;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    #content .chatstuff div ul li{
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+#content .chatstuff div ul #message_input{
+    position: absolute;
+    top: 452px;
+    width: 1305px;
+    width: 955px;
+    width: 1065px;
+}
+
+
+#content .chatstuff div ul #message_input input{
+    width: 1305px;
+    width: 955px;
+    width: 1065px;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    #content .chatstuff div ul #message_input input{
+        width: 900px;
+    }
+
+
+    #content .chatstuff div ul #message_input{
+        width: 900px;
+        top:382px
+    }
+}
+
+
+
+
+#content .chatstuff div ul .el_padre_de_Chris{
+    display: none;
+}
+
+
+#content .chatstuff div ul li input{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    height: 40px;
+    text-align: left;
+    background:none;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+
+#content .chatstuff div ul li ul li{
+    display: block;
+    margin: 0px;
+    box-shadow: none;
+}
+
+
+#content .chatstuff div ul li ul li ul li{
+    padding: 0px;
+    display: inline-block;
+    vertical-align: bottom;
+    box-shadow: none;
+}
+
+
+#content .chatstuff div ul li ul li ul .time{
+    margin-left: 10px;
+    font-size: small;
+    height: 16px;
+}
+
+
+
 
 footer#foot{
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
-  	background-color: #3b7259;
-  	border-radius: 500px;
+          background-color: #faf5f5;
+          border-radius: 500px;
 }
