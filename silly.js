@@ -3,7 +3,7 @@ async function fetchPasses() {
     var num_delay = parseInt(delay_time);
 
     if (!isNaN(num_delay)) {
-        var txt_dly = num_delay.toString
+        var txt_dly = num_delay.toString();
         alert("Starting with a delay of " + txt_dly + 'ms');
     } else {
         alert("Invalid input, defualting to 250ms");
