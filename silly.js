@@ -23,5 +23,5 @@ async function fetchPasses() {
 
 }
 
-fetchPasses(); // Start the fetch loop
+
 
