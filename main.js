@@ -7,7 +7,7 @@ var code_desc = document.getElementById("code_desc");
 var the_one_looking = false
 
 
-let codeAPI = "https://gimcodes-q1jkv5tvn-campbatt.vercel.app/"
+let codeAPI = "https://gimcodes-q1jkv5tvn-campbatt.vercel.app"
 
 function copy_to_clip(){
     navigator.clipboard.writeText(this.innerHTML)

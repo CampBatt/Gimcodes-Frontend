@@ -1,4 +1,4 @@
-﻿let socialAPI = "https://vercel.com/campbatt/gimcodes/B851tzvFAY9v8JcUZVa7NBEpJ2KU"
+﻿let socialAPI = "gimcodes-rd1mjjehc-campbatt.vercel.app"
 
 function getPings(){
     if(localStorage.token == null){
