@@ -7,7 +7,7 @@ var code_desc = document.getElementById("code_desc");
 var the_one_looking = false
 
 
-
+let codeAPI = "https://gimcodes-q1jkv5tvn-campbatt.vercel.app/"
 
 function copy_to_clip(){
     navigator.clipboard.writeText(this.innerHTML)
@@ -25,7 +25,7 @@ function copy_to_clip(){
 
 function find_code(){
 statuss.innerHTML = "Cheking if server is already finding a code, could take about 30 secconds."
-fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/test")
+fetch(codeAPI+"/test")
 .then(res => {
     return res.json()
 })
@@ -50,7 +50,7 @@ fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/test")
         keep_looking = true
         while (keep_looking){
             //console.log('started')
-       let response = await fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/");
+       let response = await fetch(codeAPI);
        console.log(response);
        let APIresponse = response.json();
        APIresponse.then(res => {

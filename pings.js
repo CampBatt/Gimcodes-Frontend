@@ -1,8 +1,10 @@
-﻿function getPings(){
+﻿let socialAPI = "https://vercel.com/campbatt/gimcodes/B851tzvFAY9v8JcUZVa7NBEpJ2KU"
+
+function getPings(){
     if(localStorage.token == null){
         return null
     }
-    fetch('https://gimcodes-j9qodbig3-campbatt.vercel.app/pings',{
+    fetch( socialAPI + '/pings',{
         method:'POST',
         headers:{
             'Content-Type': 'application/json'

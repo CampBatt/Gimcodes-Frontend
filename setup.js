@@ -4,9 +4,9 @@ var statuss = document.getElementById("status");
 var load = document.getElementById("load");
 var code_desc = document.getElementById("code_desc");
 
-
+//let codeAPI = "http://127.0.0.1:8000"
 function start(){
-fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/setup")
+fetch(codeAPI + "/setup")
 .then (res => {
     return res.json()
 })

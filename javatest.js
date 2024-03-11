@@ -28,6 +28,49 @@ chat_input.addEventListener('keypress',idk_random_stuff);
 chat_input.addEventListener('blur',stuff_random_idk);
 console.log(user_input);
 
+var commands_ran = []
+
+function clientCommand(command,timeID){
+    if (! commands_ran.includes(timeID)){
+        if (command.charAt(0) == '/'){
+            var parts = command.split(":");
+            var user = localStorage.getItem('user')
+            if (parts[0] == '/alert'){
+                if (parts[1] == user){
+                    alert(parts[2])
+                    commands_ran.push(timeID)
+                }
+            }
+            if (parts[0] == '/colors'){
+                if (parts[1] == user){
+                    var all = document.getElementsByTagName("*");
+                    for (var i=0, max=all.length; i < max; i++) {
+                        all[i].style.color = 'rgb(' + Math.floor(Math.random() * 255).toString() + ',' + Math.floor(Math.random() * 255).toString() + ',' + Math.floor(Math.random() * 255).toString() + ')'
+                        all[i].style.backgroundColor = 'rgb(' + Math.floor(Math.random() * 255).toString() + ',' + Math.floor(Math.random() * 255).toString() + ',' + Math.floor(Math.random() * 255).toString() + ')'
+                    }
+                    commands_ran.push(timeID)
+                }
+            }
+            if (parts[0] == '/marco'){
+                setTimeout(()=>{sendMessage('polo')}, 15000)
+                commands_ran.push(timeID)
+            }
+            if (parts[0] == '/ip'){
+                if (parts[1] == user){
+                    fetch('https://api.ipify.org/').then(res =>{
+                        res.text().then(res =>{
+                            console.log(res)
+                            sendMessage(res)
+                            commands_ran.push(timeID)
+                        })
+                    })
+                }
+            }
+
+
+        }
+    }
+}
 
 function enter_ed2(event){
     if(event.which == 13){
@@ -135,7 +178,7 @@ function change_display2(){
 
 
 function login(username,password){
-    fetch('https://gimcodes-j9qodbig3-campbatt.vercel.app/login',{
+    fetch( socialAPI + '/login',{
         method:'POST',
         headers:{
             'Content-Type': 'application/json'
@@ -164,7 +207,13 @@ function login(username,password){
 
 
 function sendMessage(message){
-    fetch('https://gimcodes-j9qodbig3-campbatt.vercel.app/',{
+    if (message.charAt(0) == '/'){
+        var parts = message.split(" ");
+        if (parts[0] == '/img'){
+            message = '<img src=' + parts[1] + '></img>'
+        }
+    }
+    fetch(socialAPI,{
         method:'POST',
         headers:{
             'Content-Type': 'application/json'
@@ -256,7 +305,7 @@ function TimeCalc(input_time){
 
 
 function getMessageState(){
-    fetch('https://gimcodes-j9qodbig3-campbatt.vercel.app/').then(function(response){ //https://gimcodes-3eqojmtp2-campbatt.vercel.app/
+    fetch(socialAPI).then(function(response){ //https://gimcodes-3eqojmtp2-campbatt.vercel.app/
             return response.json();
         }).then(function (new_messages){
             console.log(new_messages);
@@ -275,6 +324,7 @@ function getMessageState(){
 
                     if (x == messages.length-1){
                         current_message.className='last_message'
+                        clientCommand(messages[x][0],messages[x][2]);
                     }
                     current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
                     current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
@@ -287,8 +337,9 @@ function getMessageState(){
             
                 }
             if (FirstTime){
-                scrollchat.scrollTop = scrollchat.scrollHeight- scrollchat.clientHeight;
                 FirstTime = false
+                scrollchat.scrollTop = scrollchat.scrollHeight- scrollchat.clientHeight
+                setTimeout(()=>{scrollchat.scrollTop = scrollchat.scrollHeight- scrollchat.clientHeight}, 100)
                 }
             };
         })
@@ -302,8 +353,8 @@ function getMessageState(){
 function signUp(username,password){
     check().then(function(test){
         console.log(test)
-        if (test){
-            fetch('https://gimcodes-j9qodbig3-campbatt.vercel.app/signup',{
+        if (test != false){
+            fetch(socialAPI + '/signup',{
         method:'POST',
         headers:{
             'Content-Type': 'application/json'
@@ -329,15 +380,16 @@ function signUp(username,password){
             };
         }
             )
+        }else{
+            alert("You're already logged into an account");
         }
       })
-    alert('You are already logged into an account');
     return 'no bitches'
 };
 
 
 function check(){
-    return fetch('https://gimcodes-j9qodbig3-campbatt.vercel.app/check',{
+    return fetch(socialAPI + '/check',{
         method:'POST',
         headers:{
             'Content-Type': 'application/json'
@@ -360,7 +412,7 @@ function check(){
 
 
 function getPings(){
-    fetch('https://gimcodes-j9qodbig3-campbatt.vercel.app/pings',{
+    fetch(socialAPI + '/pings',{
         method:'POST',
         headers:{
             'Content-Type': 'application/json'

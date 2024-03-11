@@ -2,6 +2,10 @@ strong{
     font-weight: 600;
 }
 
+img{
+    max-height: 225px;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -529,10 +533,15 @@ img.hidden{
     color: rgb(0, 0, 0);
 }
 
+#content .chatstuff div ul li ul{
+    overflow: hidden;
+}
+
 #content .chatstuff div ul li ul li{
     display: block;
     margin: 0px;
     box-shadow: none;
+    overflow: hidden;
 }
 
 #content .chatstuff div ul li ul li ul li{

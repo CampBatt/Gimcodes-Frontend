@@ -4,6 +4,7 @@ var pass = document.getElementById("password");
 var fake_pass = document.getElementById("fake_password");
 var enter = document.getElementById("enter");
 
+let codeAPI = 'http://127.0.0.1:8000'
 
 function hide(){
     this.className = "hidden_fake_in"
@@ -45,7 +46,7 @@ function change_prio(){
     passcode = passcode.replace(/[^0-9]/g, '');
 
 
-    if (passcode == 'password' || passcode == 'Password'){
+    if (passcode == 'password' || passcode == 'Password'|| passcode == 'admin'){
         alert('Nice Try')
     };
 
@@ -53,12 +54,12 @@ function change_prio(){
     if (passcode == 'HackerMan' || passcode == 'hackerman'){
         alert('Your smart using the HTML but thats not actually the password');
     };
-// No, I don't have any hidden easter egg passwords in the Java script, I will tell you the password is the same as my lunch number
+// No, I don't have any hidden easter egg passwords in the Java script.
 
 
 
 
-    fetch("https://gimcodes-q1jkv5tvn-campbatt.vercel.app/prio_code", {
+    fetch(codeAPI+"/prio_code", {
     method: 'POST',
     headers:{
         'Content-Type': 'application/json'
