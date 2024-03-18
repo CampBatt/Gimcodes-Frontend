@@ -199,6 +199,7 @@ function login(username,password){
                 chat_input.value = "Send Message as " + token['user']
                 localStorage.setItem('token',token['token']);
                 localStorage.setItem('user',token['user']);
+                localStorage.setItem('pfp',token['pfp']);
             }
             
         }
