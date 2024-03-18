@@ -4,7 +4,7 @@ var pass = document.getElementById("password");
 var fake_pass = document.getElementById("fake_password");
 var enter = document.getElementById("enter");
 
-let codeAPI = 'http://127.0.0.1:8000'
+let codeAPI = "https://gimcodes-q1jkv5tvn-campbatt.vercel.app"
 
 function hide(){
     this.className = "hidden_fake_in"

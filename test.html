@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Picture</title>
+</head>
+<body>
+    <canvas id="profileCanvas" width="40" height="40"></canvas>
+
+    <script>
+        // RGB values provided in a list of lists
+        var pixels = [
+            [{r: 255, g: 0, b: 0}, {r: 0, g: 0, b: 255}, {r: 0, g: 0, b: 255}, {r: 255, g: 0, b: 0}],
+            [{r: 0, g: 0, b: 255}, {r: 9, g: 0, b: 100}, {r: 9, g: 0, b: 100}, {r: 0, g: 0, b: 255}],
+            [{r: 0, g: 0, b: 255}, {r: 9, g: 0, b: 100}, {r: 9, g: 0, b: 100}, {r: 0, g: 0, b: 255}],
+            [{r: 255, g: 0, b: 0}, {r: 0, g: 0, b: 255}, {r: 0, g: 0, b: 255}, {r: 255, g: 0, b: 0}]
+        ];
+
+        // Function to draw the profile picture on the canvas
+        function drawProfilePicture(pixels, canvas) {
+            var ctx = canvas.getContext('2d');
+            var pixelSize = canvas.width / pixels.length;
+
+            pixels.forEach(function(row, rowIndex) {
+                row.forEach(function(pixel, colIndex) {
+                    ctx.fillStyle = 'rgb(' + pixel.r + ',' + pixel.g + ',' + pixel.b + ')';
+                    ctx.fillRect(colIndex * pixelSize, rowIndex * pixelSize, pixelSize, pixelSize);
+                });
+            });
+        }
+
+        // Call the function to draw the profile picture when the page loads
+        drawProfilePicture(pixels,document.getElementById('profileCanvas'))
+    </script>
+</body>
+</html>

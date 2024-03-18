@@ -535,6 +535,20 @@ img.hidden{
 
 #content .chatstuff div ul li ul{
     overflow: hidden;
+    display: flex;
+}
+
+#content .chatstuff div ul li ul canvas{
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    margin-top: 4.25px;
+    margin-right: 4.25px;
+}
+
+#content .chatstuff div ul li ul ul{
+    overflow: hidden;
+    display: block;
 }
 
 #content .chatstuff div ul li ul li{
@@ -542,6 +556,10 @@ img.hidden{
     margin: 0px;
     box-shadow: none;
     overflow: hidden;
+}
+
+#content .chatstuff div ul li ul li ul{
+    display: inline-block;
 }
 
 #content .chatstuff div ul li ul li ul li{

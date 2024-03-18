@@ -17,7 +17,7 @@
                     <nav>
                         <ul>
                             <li class="nav"><a href="index.html"><strong>Home</strong></a></li>
-                            <li class="nav"><a href="PriorityCodes.html"><strong>Priority Codes</strong></a></li>
+                            <li class="nav" id="Prio"><a href="signup.html"><strong>Sign Up</strong></a></li>
                             <li class="nav"><a href="Chat.html"><strong>Chat</strong></a></li>
                             <li class="nav"><a href="#"><strong>Changelog</strong></a></li>
                         </ul>
@@ -27,30 +27,25 @@
         </header>
         <div id="changelogbg">
             <br>
-            <h2>Version 0.8</h2>
+            <h2>Version 0.9</h2>
             <br>
 
 
             <ul>
-                <b>Client Side Commands</b>
-                <li>Added a system for certain commands to be ran in javascript in the browser, you don't need an admin account to use these commands.</li>
-                <li>New /colors command. This command will change the targets screen a bunch of random colors, it is a client side command. Syntax: /colors:person</li>
-                <li>New /marco command. This command will make all online users say "polo", it is a client side command.</li>
-                <li>New /ip command. This command will make the target say their public IP address, it is a client side command. Syntax: /ip:person</li>
-                <li>New /alert command. This command will send the target a message, it is a client side command. Syntax: /alert:person:message</li>
-                <li>New /img command. This command will send an image when given the image's link, it is a client side command. Syntax: /img url  ***note this command uses a space instead of a :</li>
+                <b>Sign Up Page</b>
+                <li>Added a new sign up page that looks much better than the old one.</li>
+                <li>New accounts have an email attached to them as well as a custom profile picture.</li>
+                <b>Profile Pictures</b>
+                <li>Profile picture have been added, in the near future you will be able to customize your profile picture on existing accounts.</li>
                 <br>
                 <b>Student Information Commands</b>
-                <li>Using the /student command allows you to get information about a student, it is a server side command. Syntax: /student:first_name:last_name</li>
-                <li>Using the /locker command allows you to get the comobination for a given locker at OHS or OMS, it is a server side command. Syntax: /locker:locker_number</li>
-                <b>Image Fixes</b>
-                <li>Images now have a max size.</li>
-                <li>Fixed bug that made images mess with the scroll bar when first loading them.</li>
-                <li>You can no longer scroll on individual messages, excess is now just excluded.</li>
-                <b>Pings</b>
-                <li>You can now be pinged while in chat with @example_username, perviously it only worked on the home page.</li>
+                <li>The text files for the /student and /locker commands were really big and caused a large increase in bandwidth. Because of this they have both been removed.</li>
+                <b>Priority Codes</b>
+                <li>Priority codes have been renamed to manual codes.</li>
+                <li>Manual codes can now be set with the /manual command. Syntax: /manual:code.</li>
+                <li>The old priority codes page has been removed now that the /manual command exists.</li>
                 <b>Roadmap</b>
-                <li>Version 0.9: Profiles and help page</li>
+                <li>Version 0.9.1: Profile viewing, profile search, and profile custimization.</li>
                 <li>Version 0.10: Gimkit Groups.</li>
                 <li>Version 1.0: Search engine optimization, possibly Google ads.</li>
                 <br>

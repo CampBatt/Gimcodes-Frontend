@@ -145,9 +145,7 @@ function test(){
 
 
 function toggle_login(){
-    var origanle_gangster = this.innerHTML
-    this.innerHTML = this.previousElementSibling.innerHTML
-    this.previousElementSibling.innerHTML = origanle_gangster
+    location.href = 'signup.html'
 };
 
 
@@ -185,7 +183,9 @@ function login(username,password){
         },
         body:JSON.stringify({
             username:username,
-            password:password
+            password:password,
+            email:'N/A',
+            pfp:['N/A']
         })}).then(function (response){
             return response.json();
         }).then(function (token){
@@ -221,7 +221,8 @@ function sendMessage(message){
         body:JSON.stringify({
             chat:message,
             user:localStorage.getItem('user'),
-            token:localStorage.getItem('token')
+            token:localStorage.getItem('token'),
+            pfp:JSON.parse(localStorage.getItem('pfp'))
         })}).then(function (response){
             return response.json();
         }).then(function (new_messages){
@@ -243,9 +244,13 @@ function sendMessage(message){
                     current_message.className = ''
 
 
-                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
-                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
-                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.nextElementSibling.innerHTML = TimeCalc(messages[x][2])
+                    console.log(current_message,current_message.firstChild,current_message.firstChild.firstChild)
+                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
+                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
+                    console.log(messages[x][3])
+                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.nextElementSibling.innerHTML = TimeCalc(messages[x][2])
+                    drawProfilePicture(JSON.parse(messages[x][3]),current_message.firstChild.nextElementSibling.firstChild.nextElementSibling)
+                    console.log(JSON.parse(messages[x][3]))
 
 
                     current_message = current_message.nextElementSibling
@@ -301,7 +306,22 @@ function TimeCalc(input_time){
 
 };
 
+function drawProfilePicture(pixels, canvas) {
+    var ctx = canvas.getContext('2d');
+    var pixelSize = canvas.width / 4; // Assuming the profile picture is always 4x4
 
+    pixels.forEach(function(rgb, index) {
+        var rowIndex = Math.floor(index / 4);
+        var colIndex = index % 4;
+
+        var r = rgb[0]; // Extract red value from RGB array
+        var g = rgb[1]; // Extract green value from RGB array
+        var b = rgb[2]; // Extract blue value from RGB array
+
+        ctx.fillStyle = 'rgb(' + r + ',' + g + ',' + b + ')';
+        ctx.fillRect(colIndex * pixelSize, rowIndex * pixelSize, pixelSize, pixelSize);
+    });
+}
 
 
 function getMessageState(){
@@ -326,9 +346,16 @@ function getMessageState(){
                         current_message.className='last_message'
                         clientCommand(messages[x][0],messages[x][2]);
                     }
-                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
-                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
-                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.nextElementSibling.innerHTML = TimeCalc(messages[x][2])
+                    console.log(current_message,current_message.firstChild,current_message.firstChild.firstChild)
+                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
+                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
+                    console.log(messages[x][3])
+                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.nextElementSibling.innerHTML = TimeCalc(messages[x][2])
+                    drawProfilePicture(JSON.parse(messages[x][3]),current_message.firstChild.nextElementSibling.firstChild.nextElementSibling)
+                    console.log(JSON.parse(messages[x][3]))
+                    //current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
+                    //current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
+                    //current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.nextElementSibling.innerHTML = TimeCalc(messages[x][2])
 
 
                     current_message = current_message.nextElementSibling

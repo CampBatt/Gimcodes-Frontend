@@ -1,0 +1,329 @@
+#signPage{
+
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+#signPage ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#signPage ul #title h2{
+    margin-top: 0%;
+    margin-bottom: 0.5%;
+    text-align: center;
+    background-color: #3b7259;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+    font-size: 40px;
+    box-shadow: 0px 0px 4px black;
+}
+
+#signPage ul #title h2:hover{
+    color: #3b7259;
+    background-color: black;
+    box-shadow: 0px 0px 4px #3b7259;
+    cursor: pointer;
+}
+
+#signPage ul #cont{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#signPage ul #cont ul{
+    display: flex;
+    justify-content: center;
+}
+
+#signPage ul #cont ul #info{
+    background-color: #375343;
+    border-radius: 10px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin-right: 2.5%;
+    box-shadow: 0px 0px 4px black;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#signPage ul #cont ul #info ul{
+    display: inline-block;
+}
+
+#signPage ul #cont ul #info ul li{
+    font-size: 20px;
+    text-align: left;
+}
+
+#signPage ul #cont ul #info ul li input{
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: #3b7259;
+    font-size: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+#signPage ul #cont ul #info ul li input:focus{
+    background-color: black;
+    color:#3b7259 ;
+    border-color: #3b7259;
+    outline: none;
+    border-style: solid;
+}
+
+
+
+
+#signPage ul #cont ul #info ul #SignButton{
+    margin-top: 6%;
+    text-align: center;
+    background-color: #3b7259;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+#signPage ul #cont ul #info ul #SignButton:hover{
+    background-color: black;
+    color: #3b7259;
+    cursor: pointer;
+}
+
+#signPage ul #cont ul #profilecust{
+    background-color: #375343;
+    border-radius: 10px;
+    display: inline-block;
+    width: auto;
+    height: 394px;
+    text-align: center;
+    box-shadow: 0px 0px 4px black;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+#signPage ul #cont ul #profilecust ul{
+    justify-content: center;
+}
+
+#signPage ul #cont ul #profilecust ul #grid{
+    width: 100%;
+    height: 394px;
+    margin: auto;
+    margin-right: 1%;
+}
+
+#signPage ul #cont ul #profilecust ul #grid ul{
+    display: inline-block;
+    width: 100%;
+    height: 394px;
+}
+
+#signPage ul #cont ul #profilecust ul #grid ul li strong{
+    font-size: 20px;
+}
+#signPage ul #cont ul #profilecust ul #grid ul li ul{
+    display: flex;
+    height: 85px;
+}
+#signPage ul #cont ul #profilecust ul #grid ul li ul li{
+    width: 85px;
+    background-color: rgb(184, 230, 194);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#signPage ul #cont ul #profilecust ul #grid ul li ul li:hover{
+    cursor: pointer;
+}
+
+#signPage ul #cont ul #profilecust ul #pixleview{
+    margin-right: 1%;
+}
+
+#signPage ul #cont ul #profilecust ul #pixleview ul{
+    display: inline-block;
+}
+
+#signPage ul #cont ul #profilecust ul #pixleview ul #preview{
+    height: 85px;
+    width: 85px;
+    background-color: rgb(184, 230, 194);
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    display: inline-block;
+}
+
+#signPage ul #cont ul #profilecust ul #rbg li ul li{
+    text-align: left;
+    font-size: 20px;
+
+}
+
+#signPage ul #cont ul #profilecust ul #rbg li ul li input{
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: #3b7259;
+    font-size: 20px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+#signPage ul #cont ul #profilecust ul #rbg li ul li input:focus{
+    background-color: black;
+    color:#3b7259 ;
+    border-color: #3b7259;
+    outline: none;
+    border-style: solid;
+
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul{
+    margin-top: 5%;
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #3b7259;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    width: 100%;
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul{
+    width: auto;
+    margin-top: 0px;
+    display: flex;
+    background-color: #3b7259;
+    border: none;
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul li{
+    height: 13px;
+    width: 13px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: red;
+    margin: auto;
+    border-radius: 3px;
+
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul li:hover{
+    cursor: pointer;
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl1{
+    background-color: rgb(0, 0, 0);
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl2{
+    background-color: rgb(255, 255, 255);
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl3{
+    background-color: rgb(70, 70, 70);
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl4{
+    background-color: rgb(180, 180, 180);
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl5{
+    background-color: rgb(153, 0, 48);
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl6{
+    background-color: rgb(156, 90, 60);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl7{
+    background-color: rgb(237, 28, 36);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl8{
+    background-color: rgb(255, 163, 177);
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl9{
+    background-color: rgb(255, 126, 0);
+}
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl10{
+    background-color: rgb(229, 170, 122);
+}
+
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl11{
+    background-color: rgb(255, 194, 14);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl12{
+    background-color: rgb(245, 228, 156);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl13{
+    background-color: rgb(255, 242, 0);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl14{
+    background-color: rgb(255, 249, 189);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl15{
+    background-color: rgb(168, 230, 29);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl16{
+    background-color: rgb(211, 249, 188);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl17{
+    background-color: rgb(34, 177, 76);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl18{
+    background-color: rgb(0, 183, 239);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl19{
+    background-color: rgb(153, 217, 234);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl20{
+    background-color: rgb(77, 109, 243);
+}
+
+
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl21{
+    background-color: rgb(112, 154, 209);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl22{
+    background-color: rgb(47, 54, 153);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl23{
+    background-color: rgb(83, 109, 142);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl24{
+    background-color: rgb(111, 49, 152);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl25{
+    background-color: rgb(181, 165, 213);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl26{
+    background-color: rgb(10, 64, 25);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl27{
+    background-color: rgb(74, 36, 0);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl28{
+    background-color: rgb(184, 230, 194);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl29{
+    background-color: rgb(9, 179, 150);
+}
+#signPage ul #cont ul #profilecust ul #defualts ul li ul #cl30{
+    background-color: rgb(240, 72, 234);
+}
