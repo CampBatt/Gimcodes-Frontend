@@ -26,8 +26,8 @@ var red = document.getElementById("red");
 var green = document.getElementById("green");
 var blue = document.getElementById("blue");
 
-var socialAPI = 'https://gimcodes-8s07hzjre-campbatt.vercel.app'
-
+var socialAPI = 'https://gimcodes-9zd3ncmra-campbatt.vercel.app'
+//https://gimcodes-8s07hzjre-campbatt.vercel.app
 enter_button.addEventListener('click',creatAccount);
 pix1.addEventListener('click',selectPx);
 pix2.addEventListener('click',selectPx);
@@ -130,6 +130,7 @@ function creatAccount(){
                             localStorage.setItem('token',token['token']);
                             localStorage.setItem('user',token['user']);
                             localStorage.setItem('pfp',token['pfp']);
+                            localStorage.setItem('Id',token['Id']);
                             alert(message_alert);
                         };
                     }

@@ -28,6 +28,22 @@ chat_input.addEventListener('keypress',idk_random_stuff);
 chat_input.addEventListener('blur',stuff_random_idk);
 console.log(user_input);
 
+if (localStorage.getItem('user')!= null && localStorage.getItem('Id') == null){
+    fetch(socialAPI + '/fixlocal',{
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({
+            username:localStorage.getItem('user'),
+        })}).then(res => {
+            res.json().then(res =>{
+                localStorage.setItem('pfp',res['pfp']);
+                localStorage.setItem('Id',res['Id']);
+            })
+        })
+}
+
 var commands_ran = []
 
 function clientCommand(command,timeID){
@@ -145,7 +161,7 @@ function test(){
 
 
 function toggle_login(){
-    location.href = 'signup.html'
+    location.href = 'passwordchange.html'
 };
 
 
@@ -200,6 +216,7 @@ function login(username,password){
                 localStorage.setItem('token',token['token']);
                 localStorage.setItem('user',token['user']);
                 localStorage.setItem('pfp',token['pfp']);
+                localStorage.setItem('Id',token['Id']);
             }
             
         }
@@ -247,10 +264,10 @@ function sendMessage(message){
 
                     console.log(current_message,current_message.firstChild,current_message.firstChild.firstChild)
                     current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
-                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
+                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]+ '#'+messages[x][4]
                     console.log(messages[x][3])
                     current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.nextElementSibling.innerHTML = TimeCalc(messages[x][2])
-                    drawProfilePicture(JSON.parse(messages[x][3]),current_message.firstChild.nextElementSibling.firstChild.nextElementSibling)
+                    drawProfilePicture(JSON.parse(messages[x][3]),current_message.firstChild.nextElementSibling.firstChild.nextElementSibling,messages[x][4])
                     console.log(JSON.parse(messages[x][3]))
 
 
@@ -307,7 +324,10 @@ function TimeCalc(input_time){
 
 };
 
-function drawProfilePicture(pixels, canvas) {
+function drawProfilePicture(pixels, canvas, id) {
+    canvas.addEventListener("click",function(){
+        location.href = 'profile.html?id=' + id
+    })
     var ctx = canvas.getContext('2d');
     var pixelSize = canvas.width / 4; // Assuming the profile picture is always 4x4
 
@@ -319,6 +339,8 @@ function drawProfilePicture(pixels, canvas) {
         var g = rgb[1]; // Extract green value from RGB array
         var b = rgb[2]; // Extract blue value from RGB array
 
+        ctx.fillStyle = 'rgb(' + r + ',' + g + ',' + b + ')';
+        ctx.fillRect(colIndex * pixelSize, rowIndex * pixelSize, pixelSize, pixelSize);
         ctx.fillStyle = 'rgb(' + r + ',' + g + ',' + b + ')';
         ctx.fillRect(colIndex * pixelSize, rowIndex * pixelSize, pixelSize, pixelSize);
     });
@@ -347,13 +369,13 @@ function getMessageState(){
                         current_message.className='last_message'
                         clientCommand(messages[x][0],messages[x][2]);
                     }
-                    console.log(current_message,current_message.firstChild,current_message.firstChild.firstChild)
+                    //console.log(current_message,current_message.firstChild,current_message.firstChild.firstChild)
                     current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
-                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
-                    console.log(messages[x][3])
+                    current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]+ '#'+messages[x][4]
+                    //console.log(messages[x][3])
                     current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.nextElementSibling.innerHTML = TimeCalc(messages[x][2])
-                    drawProfilePicture(JSON.parse(messages[x][3]),current_message.firstChild.nextElementSibling.firstChild.nextElementSibling)
-                    console.log(JSON.parse(messages[x][3]))
+                    drawProfilePicture(JSON.parse(messages[x][3]),current_message.firstChild.nextElementSibling.firstChild.nextElementSibling,messages[x][4])
+                    //console.log(JSON.parse(messages[x][3]))
                     //current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.nextElementSibling.innerHTML = messages[x][0]
                     //current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.firstChild.innerHTML = messages[x][1]
                     //current_message.firstChild.nextElementSibling.firstChild.nextElementSibling.firstChild.firstChild.nextElementSibling.innerHTML = TimeCalc(messages[x][2])
@@ -401,6 +423,7 @@ function signUp(username,password){
             if (message_alert == 'Your New Account Is Made'){
                 localStorage.setItem('token',token['token']);
                 localStorage.setItem('user',token['user']);
+                localStorage.setItem('Id',token['Id']);
                 alert(message_alert);
                 fake_username.firstChild.innerHTML = 'Username'
                 fake_password.firstChild.innerHTML = 'Password'

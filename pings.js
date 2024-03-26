@@ -1,4 +1,16 @@
-﻿let socialAPI = "https://gimcodes-8s07hzjre-campbatt.vercel.app"
+﻿let socialAPI = "https://gimcodes-9zd3ncmra-campbatt.vercel.app"
+//http://127.0.0.1:8000 https://gimcodes-8s07hzjre-campbatt.vercel.app
+
+fetch(socialAPI + '/online',{
+    method:'POST',
+    headers:{
+        'Content-Type': 'application/json'
+    },
+    body:JSON.stringify({
+        username:localStorage.getItem('user'),
+        token:localStorage.getItem('token'),
+        Time: Math.floor(Date.now() / 1000)
+    })})
 
 function getPings(){
     if(localStorage.token == null){

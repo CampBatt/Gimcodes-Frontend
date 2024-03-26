@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <link rel = "stylesheet", href="main.css"/>
+        <link rel = "stylesheet", href="profile.css"/>
+        <link rel = "icon" href="gimkit3.png" type="image/x-icon"/>
+        <title>Gimcodes</title>
+    </head>
+
+
+    <body>
+        <header>
+            <ul class="header">
+                <li><h1>Gimcodes</h1></li>
+                <li>
+                    <nav>
+                        <ul>
+                            <li class="nav"><a href="index.html"><strong>Home</strong></a></li>
+                            <li class="nav" id="Prio"><a href="signup.html"><strong>Sign Up</strong></a></li>
+                            <li class="nav"><a href="Chat.html"><strong>Chat</strong></a></li>
+                            <li class="nav"><a href="Profile.html"><strong>Profile</strong></a></li>
+                            <li class="nav"><a href="About.html"><strong>Changelog</strong></a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+        </header>
+        <div id="profile_mat">
+            <ul>
+                <li id="user_info">
+                    <ul>
+                        <li><canvas id="displayed_pfp" width="100px" height="100px" class="invis"></canvas></li>
+                        <li id="displayed_names">
+                            <ul>
+                                <li id="displayed_user"></li>
+                                <li id="displayed_email"></li>
+                                <hr>
+                                <li id="displayed_bio"></li>
+                            </ul>
+                        </li>
+                        <!--<li id="bio"></li>-->
+                    </ul>
+                </li>
+                <li id="user_stats">
+                    <ul>
+                        <li id="stats" class="invis">Statistics</li>
+                        <li id="displayed_message_stats"> </li>
+                        <li id="displayed_code_stats"> </li>
+                        <li id="displayed_online_stats"> </li>
+                        <li id="displayed_join_date_stats"> </li>
+                        <li id="displayed_mute_stats"> </li>
+                        <li id="displayed_admin_stats"> </li>
+                        <li id="displayed_ID"> </li>
+                    </ul>
+                </li>
+                <li id="modify_button" class="invis">
+                    <a href="modify.html"><b>Modify Account Information</b></a>
+                </li>
+            </ul>
+        </div>
+        <div id="login_error" class="invis">Unable to load your account information because you're not logged in. You can login <a href="Chat.html">here</a> to see your profile or if you don't have an account yet you can sign up <a href="signup.html">here</a>.</div>
+        <script src="nav.js"></script>
+        <script src="profile.js"></script>
+    </body>

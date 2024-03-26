@@ -58,10 +58,23 @@ fetch(codeAPI+"/test")
         code = res['code']
        })
     }
+
     statuss.innerHTML = "Start Finding a Code"
     code_desc.innerHTML = "This code was found 0 minutes ago"
     load.className = "hidden"
     latest.innerHTML = code
+
+    fetch(socialAPI+'/increment',{
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({
+            username:localStorage.getItem('user'),
+            token:localStorage.getItem('token'),
+            jump:1,
+            value:'CODES_FOUND'
+    })})
     };
 
 

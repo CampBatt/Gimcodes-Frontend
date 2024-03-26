@@ -544,6 +544,7 @@ img.hidden{
     height: 35px;
     margin-top: 4.25px;
     margin-right: 4.25px;
+    cursor: pointer;
 }
 
 #content .chatstuff div ul li ul ul{

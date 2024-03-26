@@ -4,6 +4,7 @@
 <html>
     <head>
         <link rel = "stylesheet", href="main.css"/>
+        <link rel = "stylesheet", href="change.css"/>
         <link rel = "icon" href="gimkit3.png" type="image/x-icon"/>
         <title>Gimcodes</title>
     </head>
@@ -19,19 +20,59 @@
                             <li class="nav"><a href="index.html"><strong>Home</strong></a></li>
                             <li class="nav" id="Prio"><a href="signup.html"><strong>Sign Up</strong></a></li>
                             <li class="nav"><a href="Chat.html"><strong>Chat</strong></a></li>
+                            <li class="nav"><a href="profile.html"><strong>Profile</strong></a></li>
                             <li class="nav"><a href="#"><strong>Changelog</strong></a></li>
                         </ul>
                     </nav>
                 </li>
             </ul>
         </header>
-        <div id="changelogbg">
+        <div id="0.9" class="changelog_bg">
+            <br>
+            <h2>Version 0.9.1</h2>
+            <br>
+
+
+            <ul>
+                <b class="date">3/25/24</b>
+                <b>Profile Page</b>
+                <li>Added a new profile page where you can view your account statistics and information.</li>
+                <li>You can go to the profile page by clicking Profile or by clicking someone's profile picture in chat.</li>
+                <li>You can now view an accounts username, email, profile picture, about section and ID from the profile page.</li>
+                <li>New statistics are accocianted with your account including, number of messages sent, number of gimkit codes found, your last time online, your join date/account creation date, your mute status, and your admin status.</li>
+                <b>Account Custimization</b>
+                <li>You can now change your username, email, and profile picture for existing accounts by going to your profile.</li>
+                <li>You can also change your accounts password by sending a code to your email.</li>
+                <br>
+                <b>Account ID</b>
+                <li>Accounts now have an ID, now that nearly every aspect of your account having something to identify accounts is useful.</li>
+                <li>Your account ID is a unique number that will never change, for example my ID will always be 1 no matter what I do to my username.</li>
+                <li>Similar to how accounts on discord used to work your username in chat is now username#ID, for chat commands you still only type the username without the ID, in the future it will use account ID's instead of account usernames.</li>
+                <b>Changelog Changes</b>
+                <li>Changelogs now include the date.</li>
+                <li>You can now scroll to see all previous update logs.</li>
+                <b>Bugfixes</b>
+                <li>Profile pictures are now drawn twice when they are loaded to elimate the cracks that were showing earlier.</li>
+                <b>Roadmap</b>
+                <li>Version 0.9.2: profile search, dedicated login page, chat optimization and bug fixes.</li>
+                <li>Version 0.10: Gimkit Groups with end to end encryption.</li>
+                <li>Version 1.0: Search engine optimization, possibly Google ads.</li>
+                <br>
+
+
+            </ul>
+            <br>
+
+
+        </div>
+        <div id="0.9" class="changelog_bg">
             <br>
             <h2>Version 0.9</h2>
             <br>
 
 
             <ul>
+                <b class="date">3/17/24</b>
                 <b>Sign Up Page</b>
                 <li>Added a new sign up page that looks much better than the old one.</li>
                 <li>New accounts have an email attached to them as well as a custom profile picture.</li>
@@ -47,6 +88,132 @@
                 <b>Roadmap</b>
                 <li>Version 0.9.1: Profile viewing, profile search, and profile custimization.</li>
                 <li>Version 0.10: Gimkit Groups.</li>
+                <li>Version 1.0: Search engine optimization, possibly Google ads.</li>
+                <br>
+
+
+            </ul>
+            <br>
+
+
+        </div>
+        <div class="changelog_bg">
+            <br>
+            
+            <h2>Version 0.8</h2>
+            <br>
+
+
+            <ul>
+                <b class="date">3/11/24</b>
+                <b>Client Side Commands</b>
+                <li>Added a system for certain commands to be ran in javascript in the browser, you don't need an admin account to use these commands.</li>
+                <li>New /colors command. This command will change the targets screen a bunch of random colors, it is a client side command. Syntax: /colors:person</li>
+                <li>New /marco command. This command will make all online users say "polo", it is a client side command.</li>
+                <li>New /ip command. This command will make the target say their public IP address, it is a client side command. Syntax: /ip:person</li>
+                <li>New /alert command. This command will send the target a message, it is a client side command. Syntax: /alert:person:message</li>
+                <li>New /img command. This command will send an image when given the image's link, it is a client side command. Syntax: /img url  ***note this command uses a space instead of a :</li>
+                <br>
+                <b>Student Information Commands</b>
+                <li>Using the /student command allows you to get information about a student, it is a server side command. Syntax: /student:first_name:last_name</li>
+                <li>Using the /locker command allows you to get the comobination for a given locker at OHS or OMS, it is a server side command. Syntax: /locker:locker_number</li>
+                <b>Image Fixes</b>
+                <li>Images now have a max size.</li>
+                <li>Fixed bug that made images mess with the scroll bar when first loading them.</li>
+                <li>You can no longer scroll on individual messages, excess is now just excluded.</li>
+                <b>Pings</b>
+                <li>You can now be pinged while in chat with @example_username, perviously it only worked on the home page.</li>
+                <b>Roadmap</b>
+                <li>Version 0.9: Profiles and help page</li>
+                <li>Version 0.10: Gimkit Groups.</li>
+                <li>Version 1.0: Search engine optimization, possibly Google ads.</li>
+                <br>
+
+
+            </ul>
+            <br>
+
+
+        </div>
+        <div class="changelog_bg">
+            <br>
+            <h2>Version 0.7.2</h2>
+            <br>
+
+
+            <ul>
+                <b class="date">1/2/24</b>
+                <b>Christmas</b>
+                <li>Removed Christmas theme, womp womp.</li>
+                <br>
+                <b>Roadmap</b>
+                <li>Version 0.8: More fun commands, optimization, bugfixes.</li>
+                <li>Version 0.9: Profles and Gimkit hacks if I can get them to work.</li>
+                <li>Version 1.0: Search engine optimization, possibly Google ads.</li>
+                <br>
+
+
+            </ul>
+            <br>
+
+
+        </div>
+        <div class="changelog_bg">
+            <br>
+            <h2>Version 0.7.1</h2>
+            <br>
+
+
+            <ul>
+                <b class="date">12/22/23</b>
+                <b>Christmas</b>
+                <li>Added a Christmas theme, merry Christmas.</li>
+                <br>
+                <b>Roadmap</b>
+                <li>Version 0.8: More fun commands, optimization, bugfixes.</li>
+                <li>Version 0.9: Profles and Gimkit hacks if I can get them to work.</li>
+                <li>Version 1.0: Search engine optimization, possibly Google ads.</li>
+                <br>
+
+
+            </ul>
+            <br>
+
+
+        </div>
+        <br>
+        <div class="changelog_bg">
+            <br>
+            <h2>Version 0.7</h2>
+            <br>
+
+
+            <ul>
+                <b>Changelog</b>
+                <li>There is now a changelog to replace the "About" section as it wasn't used for anything.</li>
+                <br>
+                <b>Chat Scrolling</b>
+                <li>There is now a chat history, you can scroll up to see previous messages.</li>
+                <li>75 messages are saved compared to 7 that used to be saved before this change.</li>
+                <li>Large messages and images now appear full size, a more formal way of sending images will be added in the future.</li>
+                <br>
+                <b>Command changes</b>
+                <li>Some commands have been changed to account for the new chat scrolling</li>
+                <li>/change command now works differntly. The old syntax was /change:MessageNumber:NewMessage where the message number was the number of the message going from top too bottom, it is now reversed and goes from bottom to top. For example if  you were to change the most recently sent message you would type /change:1:test.</li>
+                <li>/delete command now works differntly. Used to delete the last sent message but now can delete any message using /delete:MessageNumber, works simmarly to /change.</li>
+                <li>/clear command removed, made obselete by the updated /delete command.</li>
+                <li>/fill command removed, was next to useless.</li>
+                <li>'all' can be used with the /ping command. For example, /ping:all.</li>
+                <br>
+                <b>Bugfixes/Miscellaneous</b>
+                <li>Fixed the latest code not automaticly refreshing.</li>
+                <li>Removed the pop-up to check if you are afk as it doesn't do anything in google chrome.</li>
+                <li>Removed the footer that said "Gimcodes website made by Aiden Towne", was useless and just caused issues.</li>
+                <br>
+                <b>Roadmap</b>
+                <li>I came up with a basic roadmap for the Gimcodes.</li>
+                <li>Version 0.8: More fun commands, optimization, bugfixes.</li>
+                <li>Version 0.9: Profles and Gimkit hacks if I can get them to work.</li>
                 <li>Version 1.0: Search engine optimization, possibly Google ads.</li>
                 <br>
 

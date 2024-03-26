@@ -12,7 +12,7 @@ function move(){
 };
 
 
-for (x =0; x<4; x++){
+for (x =0; x<nav.length; x++){
     nav[x].addEventListener("click", move)
     console.log(Math.random())
 };
